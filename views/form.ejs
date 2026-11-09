@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form method="POST" action="/new">
+        <div>
+            <label for="author">작성자 이름:</label>
+            <input type="text" id="author" name="messageUser" required>
+        </div>
+
+        <div>
+            <label for="message">메시지 내용:</label>
+            <input type="text" id="message" name="messageText" required>
+        </div>
+
+        <button type="submit">등록</button>
+    </form>
+
+    <br>
+    <a href="/">목록으로 돌아가기</a>
+</body>
+</html>

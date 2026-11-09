@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    
+    <ul>
+        <% messages.forEach((message) => { %>
+            <li>
+                <p><strong><%= message.user %></strong></p>
+                <p><%= message.text %></p>
+                <small><%= message.added.toLocaleString() %></small>
+            </li>
+        <% }) %>
+    </ul>
+
+    <a href="/new">새 메시지 작성</a>
+  </body>
+</html>
